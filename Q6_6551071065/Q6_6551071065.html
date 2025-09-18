@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&M - Bán Buôn Bán Lẻ Đầm Bầu Thời Trang</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7fa; margin: 0; }
+        .header {
+            background: linear-gradient(90deg, #b7d1e6 0%, #f7e6f7 100%);
+            padding: 0;
+            position: relative;
+        }
+        .header-content {
+            text-align: center;
+            padding: 18px 0 8px 0;
+        }
+        .header-content h1 {
+            font-size: 2.2em;
+            letter-spacing: 6px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+        .header-content p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 4px 0 0 0;
+        }
+        .header-bar {
+            background: #222;
+            color: #fff;
+            font-size: 1em;
+            padding: 6px 0;
+            text-align: center;
+        }
+        .nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 8px 0;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            padding: 4px 12px;
+        }
+        .nav a:hover {
+            background: #f7e6f7;
+            color: #222;
+            border-radius: 4px;
+        }
+        .main {
+            display: flex;
+            gap: 18px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 600px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        .sidebar {
+            width: 220px;
+            background: #f3f3f3;
+            padding: 18px 12px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            font-size: 1.1em;
+            color: #2a5d9f;
+            margin-top: 0;
+        }
+        .sidebar ul {
+            padding-left: 0;
+        }
+        .sidebar > ul {
+            list-style-type: square;
+        }
+        .sidebar ul ul {
+            list-style-type: disc;
+        }
+        .sidebar li {
+            margin-bottom: 6px;
+        }
+        .sidebar .category {
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .content {
+            flex: 1;
+            padding: 18px 24px;
+        }
+        .banner {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+        .banner img {
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .section-title {
+            background: #e6e6e6;
+            color: #2a5d9f;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-top: 18px;
+            margin-bottom: 12px;
+        }
+        .products {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            margin-bottom: 18px;
+            text-align: center;
+            box-shadow: 0 1px 4px #eee;
+            padding-bottom: 12px;
+        }
+        .product-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+        .product-name {
+            font-size: 1em;
+            margin: 8px 0 4px 0;
+        }
+        .product-price {
+            color: #d35400;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .buy-btn {
+            background: #f7e6f7;
+            color: #222;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 18px;
+            font-weight: bold;
+            margin-top: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #2a5d9f;
+            color: #fff;
+        }
+        .footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 0.95em;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>D & M</h1>
+            <p>Bán Buôn Bán Lẻ Đầm Bầu Thời Trang</p>
+        </div>
+        <div class="header-bar">
+            Tel: 043.995.4053 &nbsp; | &nbsp; Hương: 09.8336.3995 &nbsp; | &nbsp; Mẹ: 01267.11.2222
+        </div>
+        <div class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <h3>Danh mục sản phẩm</h3>
+            <ul>
+                <li>
+                    <span class="category">ÁO LEN</span>
+                    <ul style="margin-left: 16px;">
+                        <li>Áo Len Cổ Lọ</li>
+                        <li>Áo Len Cổ Tròn</li>
+                        <li>Áo Len Cổ Thuyền</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">ĐẦM BẦU</span>
+                    <ul style="margin-left: 16px;">
+                        <li>Đầm Bầu</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="banner">
+                <img src="https://img.freepik.com/free-photo/stack-colorful-knitted-sweaters_144627-4576.jpg" alt="Sweaters">
+                <img src="https://img.freepik.com/free-photo/clothes-rack-with-hangers_144627-3796.jpg" alt="Clothes Rack">
+                <img src="https://img.freepik.com/free-photo/woman-hanging-laundry-outdoors_144627-3797.jpg" alt="Laundry">
+            </div>
+            <div class="section-title">SẢN PHẨM NỔI BẬT</div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">120.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài đỏ">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">120.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài xanh">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">129.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+            </div>
+            <div class="section-title">SẢN PHẨM MỚI NHẤT</div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">120.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài đỏ">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">120.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://imgur.com/1Q8ZQ1K.png" alt="Áo nữ cổ tay dài xanh">
+                    <div class="product-name">Áo nữ cổ tay dài - AT10062</div>
+                    <div class="product-price">129.000 đ</div>
+                    <button class="buy-btn">Mua hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2014 Designed by Web Designer Templates Perfect
+    </div>
+</body>
+</html>
