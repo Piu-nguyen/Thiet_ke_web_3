@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Info Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: #f8f8f8;
+		}
+		.form-box {
+			width: 480px;
+			margin: 40px auto;
+			background: #fff;
+			border: 2px solid #bbb;
+			padding: 28px 32px;
+			border-radius: 8px;
+		}
+		label {
+			font-weight: bold;
+			display: block;
+			margin-top: 16px;
+		}
+		.form-row {
+			margin-bottom: 10px;
+		}
+		.form-row input[type="text"],
+		.form-row textarea,
+		.form-row select {
+			width: 100%;
+			padding: 6px;
+			margin-top: 4px;
+			box-sizing: border-box;
+		}
+		.form-row textarea {
+			height: 60px;
+		}
+		.form-row .options {
+			margin-top: 4px;
+		}
+		.form-row .options label {
+			display: inline-block;
+			font-weight: normal;
+			margin-right: 18px;
+		}
+		.form-btns {
+			margin-top: 18px;
+			text-align: center;
+		}
+		.method-switch {
+			margin-bottom: 18px;
+			text-align: right;
+			font-size: 0.95em;
+		}
+	</style>
+	<script>
+		function switchMethod(method) {
+			document.getElementById('userForm').method = method;
+		}
+	</script>
+</head>
+<body>
+	<div class="form-box">
+		<h2 style="text-align:center;">User Information Form</h2>
+		<div class="method-switch">
+			<span>Form method: </span>
+			<button type="button" onclick="switchMethod('get')">GET</button>
+			<button type="button" onclick="switchMethod('post')">POST</button>
+		</div>
+		<form id="userForm" action="#" method="get" autocomplete="on">
+			<div class="form-row">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-row">
+				<label>Age:</label>
+				<div class="options">
+					<label><input type="radio" name="age" value="<18" required> &lt;18</label>
+					<label><input type="radio" name="age" value="19-35"> 19-35</label>
+					<label><input type="radio" name="age" value="36-48"> 36-48</label>
+					<label><input type="radio" name="age" value=">49"> &gt;49</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<label for="profession">Profession:</label>
+				<input type="text" id="profession" name="profession" required>
+			</div>
+			<div class="form-row">
+				<label for="country">Country:</label>
+				<select id="country" name="country" required>
+					<option value="">--Select--</option>
+					<option value="Vietnam">Vietnam</option>
+					<option value="USA">USA</option>
+					<option value="UK">UK</option>
+					<option value="India">India</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div class="form-row">
+				<label>Interests:</label>
+				<div class="options">
+					<label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+					<label><input type="checkbox" name="interests" value="Music"> Music</label>
+					<label><input type="checkbox" name="interests" value="Movies"> Movies</label>
+					<label><input type="checkbox" name="interests" value="Travelling"> Travelling</label>
+					<label><input type="checkbox" name="interests" value="Reading"> Reading</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<label for="found">How did you find out about the site?</label>
+				<textarea id="found" name="found" required></textarea>
+			</div>
+			<div class="form-btns">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
