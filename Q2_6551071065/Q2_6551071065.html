@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: #f8f8f8;
+			margin: 0;
+			padding: 0;
+		}
+		.main-box {
+			width: 600px;
+			margin: 40px auto;
+			border: 2px solid #3a6ea5;
+			background: #fff;
+			padding: 24px 32px;
+			box-sizing: border-box;
+		}
+		.header {
+			text-align: center;
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.logo-title {
+			text-align: center;
+			font-size: 1.1em;
+			margin-bottom: 18px;
+		}
+		.nav {
+			text-align: center;
+			margin-bottom: 18px;
+		}
+		.nav a {
+			color: #3a6ea5;
+			text-decoration: underline;
+			font-size: 1.1em;
+			margin: 0 18px;
+		}
+		.content-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-bottom: 18px;
+		}
+		.news, .announcements {
+			width: 45%;
+		}
+		.news {
+			border-right: 2px solid #bbb;
+			padding-right: 18px;
+		}
+		.announcements {
+			padding-left: 18px;
+		}
+		.section-title {
+			font-weight: bold;
+			font-size: 1.1em;
+			margin-bottom: 8px;
+		}
+		.contact {
+			text-align: center;
+			margin-top: 24px;
+			font-size: 1em;
+		}
+		.contact a {
+			color: #3a6ea5;
+			text-decoration: underline;
+		}
+		.copyright {
+			text-align: center;
+			font-size: 0.95em;
+			color: #555;
+			margin-top: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-box">
+		<div class="header">Home page</div>
+		<div class="logo-title">
+			<img src="Picture/logo_utc2.png" alt="Logo" style="height:32px; vertical-align:middle;"> &nbsp; Logo - UTC2
+		</div>
+		<div class="nav">
+			<a href="#">Presentation</a>
+			<a href="#">Studies</a>
+			<a href="#">Staff</a>
+		</div>
+		<div class="content-row">
+			<div class="news">
+				<div class="section-title">News</div>
+				<div>News 1 – Date<br>Description</div>
+				<br>
+				<div>News 2 – Date<br>Description</div>
+			</div>
+			<div class="announcements">
+				<div class="section-title">Announcements</div>
+				<div>Open course 1<br>Description</div>
+				<br>
+				<div>Open course 2<br>Description</div>
+			</div>
+		</div>
+		<div class="contact">
+			Contact: <a href="mailto:info@university.com">info@university.com</a>
+		</div>
+		<div class="copyright">(c) University, 2011</div>
+	</div>
+</body>
+</html>
