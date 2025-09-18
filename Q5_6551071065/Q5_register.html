@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7fa; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 32px; }
+        nav { margin-bottom: 24 px; }
+        nav a { margin-right: 18px; color: #2a5d9f; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        h1 { color: #2a5d9f; }
+        label { font-weight: bold; display: block; margin-top: 16px; }
+        .form-row { margin-bottom: 10px; }
+        .form-row input[type="text"],
+        .form-row textarea,
+        .form-row select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        .form-row textarea { height: 60px; }
+        .form-row .options { margin-top: 4px; }
+        .form-row .options label { display: inline-block; font-weight: normal; margin-right: 18px; }
+        .form-btns { margin-top: 18px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="Q5_6551071065.html">Home</a>
+            <a href="Q5_experience.html">Experience</a>
+        </nav>
+        <h1>Registration Form</h1>
+        <form action="#" method="post" autocomplete="on">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label>Age:</label>
+                <div class="options">
+                    <label><input type="radio" name="age" value="<18" required> &lt;18</label>
+                    <label><input type="radio" name="age" value="19-35"> 19-35</label>
+                    <label><input type="radio" name="age" value="36-48"> 36-48</label>
+                    <label><input type="radio" name="age" value=">49"> &gt;49</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+            <div class="form-row">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Interests:</label>
+                <div class="options">
+                    <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+                    <label><input type="checkbox" name="interests" value="Music"> Music</label>
+                    <label><input type="checkbox" name="interests" value="Movies"> Movies</label>
+                    <label><input type="checkbox" name="interests" value="Travelling"> Travelling</label>
+                    <label><input type="checkbox" name="interests" value="Reading"> Reading</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="found">How did you find out about the site?</label>
+                <textarea id="found" name="found" required></textarea>
+            </div>
+            <div class="form-btns">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
